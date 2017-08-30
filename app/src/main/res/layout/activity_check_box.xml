@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你会哪些移动开发："
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_title"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iOS"
+        android:textSize="20sp"
+        android:layout_below="@id/cb_1"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H5"
+        android:textSize="20sp"
+        android:layout_below="@id/cb_2"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:textSize="20sp"
+        android:layout_below="@id/cb_3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/cb_4"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的兴趣："
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <CheckBox
+            android:id="@+id/cb_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编程"
+            android:button="@drawable/bg_checkbox"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="做饭"
+            android:paddingLeft="10dp"
+            android:button="@drawable/bg_checkbox"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

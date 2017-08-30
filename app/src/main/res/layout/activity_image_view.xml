@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#FF9900"
+        android:src="@drawable/bg_iron_man"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#FF9900"
+        android:src="@drawable/bg_iron_man"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/iv_1"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#FF9900"
+        android:src="@drawable/bg_iron_man"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/iv_2"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#FF9900"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/iv_3"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
