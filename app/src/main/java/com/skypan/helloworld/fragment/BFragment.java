@@ -30,6 +30,6 @@ public class BFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         //
         mTvTitle = (TextView) view.findViewById(R.id.tv_title);
-
     }
+
 }

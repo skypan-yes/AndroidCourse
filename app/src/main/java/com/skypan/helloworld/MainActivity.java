@@ -11,6 +11,7 @@ import com.skypan.helloworld.fragment.ContainerActivity;
 import com.skypan.helloworld.gridview.GridViewActivity;
 import com.skypan.helloworld.jump.AActivity;
 import com.skypan.helloworld.listview.ListViewActivity;
+import com.skypan.helloworld.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnLifeCycle;
     private Button mBtnJump;
     private Button mBtnFragment;
+    private Button mBtnRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnLifeCycle = (Button) findViewById(R.id.btn_lifecycle);
         mBtnJump = (Button) findViewById(R.id.btn_jump);
         mBtnFragment = (Button) findViewById(R.id.btn_fragment);
+        mBtnRv = (Button) findViewById(R.id.btn_recyclerview);
         setListeners();
     }
 
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnLifeCycle.setOnClickListener(onClick);
         mBtnJump.setOnClickListener(onClick);
         mBtnFragment.setOnClickListener(onClick);
+        mBtnRv.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -108,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_fragment:
                     //跳转到Fragment演示界面
                     intent = new Intent(MainActivity.this, ContainerActivity.class);
+                    break;
+                case R.id.btn_recyclerview:
+                    //跳转到RecyclerView演示界面
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
