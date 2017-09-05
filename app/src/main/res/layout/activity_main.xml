@@ -91,6 +91,13 @@
             android:layout_height="wrap_content"
             android:text="RecyclerView"
             android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView"
+            android:textAllCaps="false"/>
     </LinearLayout>
 
 </ScrollView>

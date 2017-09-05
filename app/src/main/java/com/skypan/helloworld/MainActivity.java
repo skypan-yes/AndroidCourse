@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnJump;
     private Button mBtnFragment;
     private Button mBtnRv;
+    private Button mBtnWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnJump = (Button) findViewById(R.id.btn_jump);
         mBtnFragment = (Button) findViewById(R.id.btn_fragment);
         mBtnRv = (Button) findViewById(R.id.btn_recyclerview);
+        mBtnWebView = (Button) findViewById(R.id.btn_webview);
         setListeners();
     }
 
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnJump.setOnClickListener(onClick);
         mBtnFragment.setOnClickListener(onClick);
         mBtnRv.setOnClickListener(onClick);
+        mBtnWebView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -116,6 +119,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_recyclerview:
                     //跳转到RecyclerView演示界面
                     intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_webview:
+                    //跳转到WebView演示界面
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
                     break;
             }
             startActivity(intent);
