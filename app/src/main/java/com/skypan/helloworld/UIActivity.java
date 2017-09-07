@@ -12,7 +12,7 @@ import com.skypan.helloworld.jump.AActivity;
 import com.skypan.helloworld.listview.ListViewActivity;
 import com.skypan.helloworld.recyclerview.RecyclerViewActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class UIActivity extends AppCompatActivity {
 
     private Button mBtnTextView;
     private Button mBtnButton;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ui);
         mBtnTextView = (Button) findViewById(R.id.btn_textview);
         mBtnButton = (Button) findViewById(R.id.btn_button);
         mBtnEditText = (Button) findViewById(R.id.btn_edittext);
@@ -79,63 +79,63 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.btn_textview:
                     //跳转到TextView演示界面
-                    intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    intent = new Intent(UIActivity.this, TextViewActivity.class);
                     break;
                 case R.id.btn_button:
                     //跳转到Button演示界面
-                    intent = new Intent(MainActivity.this, ButtonActivity.class);
+                    intent = new Intent(UIActivity.this, ButtonActivity.class);
                     break;
                 case R.id.btn_edittext:
                     //跳转到EditText演示界面
-                    intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    intent = new Intent(UIActivity.this, EditTextActivity.class);
                     break;
                 case R.id.btn_radiobutton:
                     //跳转到RadioButton演示界面
-                    intent = new Intent(MainActivity.this, RadioButtonActivity.class);
+                    intent = new Intent(UIActivity.this, RadioButtonActivity.class);
                     break;
                 case R.id.btn_checkbox:
                     //跳转到CheckBox演示界面
-                    intent = new Intent(MainActivity.this, CheckBoxActivity.class);
+                    intent = new Intent(UIActivity.this, CheckBoxActivity.class);
                     break;
                 case R.id.btn_imageview:
                     //跳转到ImageView演示界面
-                    intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    intent = new Intent(UIActivity.this, ImageViewActivity.class);
                     break;
                 case R.id.btn_listview:
                     //跳转到ListView演示界面
-                    intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    intent = new Intent(UIActivity.this, ListViewActivity.class);
                     break;
                 case R.id.btn_gridview:
                     //跳转到GridView演示界面
-                    intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    intent = new Intent(UIActivity.this, GridViewActivity.class);
                     break;
                 case R.id.btn_lifecycle:
                     //跳转到LifeCycle演示界面
-                    intent = new Intent(MainActivity.this, LifeCycleActivity.class);
+                    intent = new Intent(UIActivity.this, LifeCycleActivity.class);
                     break;
                 case R.id.btn_jump:
                     //跳转到AActivity演示界面
-                    intent = new Intent(MainActivity.this, AActivity.class);
+                    intent = new Intent(UIActivity.this, AActivity.class);
                     break;
                 case R.id.btn_fragment:
                     //跳转到Fragment演示界面
-                    intent = new Intent(MainActivity.this, ContainerActivity.class);
+                    intent = new Intent(UIActivity.this, ContainerActivity.class);
                     break;
                 case R.id.btn_recyclerview:
                     //跳转到RecyclerView演示界面
-                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    intent = new Intent(UIActivity.this, RecyclerViewActivity.class);
                     break;
                 case R.id.btn_webview:
                     //跳转到WebView演示界面
-                    intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    intent = new Intent(UIActivity.this, WebViewActivity.class);
                     break;
                 case R.id.btn_toast:
                     //跳转到Toast演示界面
-                    intent = new Intent(MainActivity.this, ToastActivity.class);
+                    intent = new Intent(UIActivity.this, ToastActivity.class);
                     break;
                 case R.id.btn_dialog:
                     //跳转到Dialog演示界面
-                    intent = new Intent(MainActivity.this, DialogActivity.class);
+                    intent = new Intent(UIActivity.this, DialogActivity.class);
                     break;
             }
             startActivity(intent);
