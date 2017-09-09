@@ -34,5 +34,5 @@
         android:layout_height="wrap_content"
         android:text="style5"
         android:textAllCaps="false"/>
-    
+
 </LinearLayout>

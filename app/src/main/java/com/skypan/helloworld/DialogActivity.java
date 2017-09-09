@@ -115,7 +115,6 @@ public class DialogActivity extends AppCompatActivity {
                     });
                     builder5.setTitle("请先登录").setView(view).show();
                     break;
-
             }
         }
     }

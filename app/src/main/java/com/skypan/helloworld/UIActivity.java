@@ -29,6 +29,9 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnWebView;
     private Button mBtnToast;
     private Button mBtnDialog;
+    private Button mBtnProgress;
+    private Button mBtnCustomDialog;
+    private Button mBtnPop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,9 @@ public class UIActivity extends AppCompatActivity {
         mBtnWebView = (Button) findViewById(R.id.btn_webview);
         mBtnToast = (Button) findViewById(R.id.btn_toast);
         mBtnDialog = (Button) findViewById(R.id.btn_dialog);
+        mBtnProgress = (Button) findViewById(R.id.btn_progress);
+        mBtnCustomDialog = (Button) findViewById(R.id.btn_custom_dialog);
+        mBtnPop = (Button) findViewById(R.id.btn_pop);
         setListeners();
     }
 
@@ -69,6 +75,9 @@ public class UIActivity extends AppCompatActivity {
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
         mBtnDialog.setOnClickListener(onClick);
+        mBtnProgress.setOnClickListener(onClick);
+        mBtnCustomDialog.setOnClickListener(onClick);
+        mBtnPop.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -136,6 +145,18 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.btn_dialog:
                     //跳转到Dialog演示界面
                     intent = new Intent(UIActivity.this, DialogActivity.class);
+                    break;
+                case R.id.btn_progress:
+                    //跳转到Progress演示界面
+                    intent = new Intent(UIActivity.this, ProgressActivity.class);
+                    break;
+                case R.id.btn_custom_dialog:
+                    //跳转到自定义Dialog演示界面
+                    intent = new Intent(UIActivity.this, CustomDialogActivity.class);
+                    break;
+                case R.id.btn_pop:
+                    //跳转到PopupWindow演示界面
+                    intent = new Intent(UIActivity.this, PopupWindowActivity.class);
                     break;
             }
             startActivity(intent);
